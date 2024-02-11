@@ -1,0 +1,6 @@
+1|szymon|123|
+2|marek|321|
+3|kasia|258|
+4|zenek|789|
+5|bartek|159|
+6|marta|369|

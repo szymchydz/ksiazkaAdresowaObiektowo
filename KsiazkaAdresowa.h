@@ -14,6 +14,7 @@ class KsiazkaAdresowa {
 
 public:
 
+    KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszUzytkownikow();
 

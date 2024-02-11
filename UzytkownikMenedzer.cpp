@@ -64,6 +64,10 @@ void UzytkownikMenedzer :: wypiszUzytkownikow() {
     }
 }
 
+void UzytkownikMenedzer :: wczytajUzytkownikowZPliku() {
 
+  uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
+
+}
 
 
