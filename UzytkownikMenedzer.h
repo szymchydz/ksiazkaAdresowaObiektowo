@@ -6,6 +6,7 @@
 #include <windows.h>
 #include <fstream>
 #include <sstream>
+#include<cstdlib>
 
 #include "Uzytkownik.h"
 #include "PlikZUzytkownikami.h"
@@ -25,6 +26,7 @@ class UzytkownikMenedzer {
 public:
     void rejestracjaUzytkownika();
     void wypiszUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 
 };
 

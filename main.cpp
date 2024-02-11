@@ -8,6 +8,8 @@ using namespace std;
 int main()
 {
     KsiazkaAdresowa ksiazkaAdresowa;
+    ksiazkaAdresowa.wypiszUzytkownikow();
+    ksiazkaAdresowa.rejestracjaUzytkownika();
     ksiazkaAdresowa.rejestracjaUzytkownika();
     ksiazkaAdresowa.wypiszUzytkownikow();
 
