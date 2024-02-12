@@ -1,13 +1,9 @@
 #include "PlikZUzytkownikami.h"
 
-PlikZUzytkownikami :: PlikZUzytkownikami() {
-
-    nazwaPlikuZUzytkownikami = "Uzytkownicy.txt";
-}
-
 void PlikZUzytkownikami :: dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik) {
 
     string liniaZDanymiUzytkownika = "";
+    fstream plikTekstowy;
     plikTekstowy.open(nazwaPlikuZUzytkownikami.c_str(), ios::app);
 
     if (plikTekstowy.good() == true) {
@@ -24,6 +20,9 @@ void PlikZUzytkownikami :: dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik) {
 }
 
 bool PlikZUzytkownikami :: czyPlikJestPusty() {
+
+    fstream plikTekstowy;
+
     plikTekstowy.seekg(0, ios::end);
     if (plikTekstowy.tellg() == 0)
         return true;
@@ -46,6 +45,7 @@ vector <Uzytkownik> PlikZUzytkownikami :: wczytajUzytkownikowZPliku() {
     Uzytkownik uzytkownik;
     vector <Uzytkownik> uzytkownicy;
     string daneJednegoUzytkownikaOddzielonePionowymiKreskami = "";
+    fstream plikTekstowy;
 
     plikTekstowy.open(nazwaPlikuZUzytkownikami.c_str(), ios::in);
 
