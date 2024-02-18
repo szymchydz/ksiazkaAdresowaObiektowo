@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1707764675 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1707764675 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+	"PlikZUzytkownikami.h"
+
+1707074682 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\uzytkownik.h
+	<iostream>
+
+1707074682 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\uzytkownik.cpp
+	<iostream>
+	"Uzytkownik.h"
+
+1707764675 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1707764675 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<cstdlib>
+	"Uzytkownik.h"
+	"PlikZUzytkownikami.h"
+
+1707764675 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	"Uzytkownik.h"
+	"MetodyPomocnicze.h"
+
+1707074682 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\metodypomocnicze.h
+	<iostream>
+	<sstream>
+
+1707074682 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1707764675 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1707661492 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
+1707764675 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1707764675 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+	"PlikZUzytkownikami.h"
+
+1707767497 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<cstdlib>
+	"Uzytkownik.h"
+	"PlikZUzytkownikami.h"
+
+1707074682 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.h
+	<iostream>
+
+1707766994 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	"Uzytkownik.h"
+	"MetodyPomocnicze.h"
+
+1707074682 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.h
+	<iostream>
+	<sstream>
+
+1707766134 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1707074682 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1707764675 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1707074682 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.cpp
+	<iostream>
+	"Uzytkownik.h"
+
+1707661492 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
