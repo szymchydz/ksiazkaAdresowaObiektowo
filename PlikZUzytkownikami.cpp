@@ -21,14 +21,20 @@ void PlikZUzytkownikami :: dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik) {
 
 bool PlikZUzytkownikami :: czyPlikJestPusty() {
 
-    fstream plikTekstowy;
+    fstream plikTekstowy("Uzytkownicy.txt", ios::in);
 
-    plikTekstowy.seekg(0, ios::end);
+    if (!plikTekstowy.is_open()) {
+        cerr << "Blad otwarcia pliku!" << endl;
+        return false;
+    }
+
+   plikTekstowy.seekg(0, ios::end);
     if (plikTekstowy.tellg() == 0)
         return true;
     else
         return false;
 }
+
 
 string PlikZUzytkownikami :: zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik) {
     string liniaZDanymiUzytkownika = "";
@@ -85,3 +91,4 @@ Uzytkownik PlikZUzytkownikami :: pobierzDaneUzytkownika(string daneJednegoUzytko
     }
     return uzytkownik;
 }
+
