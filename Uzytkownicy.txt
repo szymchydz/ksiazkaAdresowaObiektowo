@@ -1,2 +1,7 @@
 1|kasia|321|
+<<<<<<< HEAD
 2|szymon|123|
+=======
+2|szymon|123|
+3|basia|258|
+>>>>>>> featurepassword_change_function

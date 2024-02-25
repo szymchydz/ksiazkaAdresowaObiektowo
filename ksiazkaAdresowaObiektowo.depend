@@ -48,15 +48,26 @@
 1707661492 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowoartur\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
+<<<<<<< HEAD
 1708260490 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
 1708452834 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.h
+=======
+1708882386 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1708882386 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.h
+>>>>>>> featurepassword_change_function
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"PlikZUzytkownikami.h"
 
+<<<<<<< HEAD
 1708881702 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.h
+=======
+1708883218 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.h
+>>>>>>> featurepassword_change_function
 	<iostream>
 	<vector>
 	<windows.h>
@@ -69,13 +80,18 @@
 1707074682 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.h
 	<iostream>
 
+<<<<<<< HEAD
 1708456542 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.h
+=======
+1708886275 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.h
+>>>>>>> featurepassword_change_function
 	<iostream>
 	<vector>
 	<fstream>
 	"Uzytkownik.h"
 	"MetodyPomocnicze.h"
 
+<<<<<<< HEAD
 1708258471 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.h
 	<iostream>
 	<sstream>
@@ -88,12 +104,30 @@
 	"MetodyPomocnicze.h"
 
 1708457194 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.cpp
+=======
+1708882386 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.h
+	<iostream>
+	<sstream>
+
+1708882386 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1708882386 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1708886275 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.cpp
+>>>>>>> featurepassword_change_function
 	"PlikZUzytkownikami.h"
 
 1707074682 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.cpp
 	<iostream>
 	"Uzytkownik.h"
 
+<<<<<<< HEAD
 1708881702 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.cpp
+=======
+1708882386 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.cpp
+>>>>>>> featurepassword_change_function
 	"UzytkownikMenedzer.h"
 
