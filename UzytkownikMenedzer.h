@@ -6,7 +6,7 @@
 #include <windows.h>
 #include <fstream>
 #include <sstream>
-#include<cstdlib>
+#include <cstdlib>
 
 #include "Uzytkownik.h"
 #include "PlikZUzytkownikami.h"
@@ -27,6 +27,7 @@ public:
     UzytkownikMenedzer (string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami) {};
     void rejestracjaUzytkownika();
     int logowanieUzytkownika();
+    void zmianaHaslaZalogowanegoUzytkownika();
     void wypiszUzytkownikow();
     void wczytajUzytkownikowZPliku();
 
