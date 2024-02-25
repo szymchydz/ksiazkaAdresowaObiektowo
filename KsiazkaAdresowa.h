@@ -20,7 +20,7 @@ public:
 
     void rejestracjaUzytkownika();
     void wypiszUzytkownikow();
-
+    int logowanieUzytkownika();
 };
 
 #endif
