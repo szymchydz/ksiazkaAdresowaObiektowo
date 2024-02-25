@@ -11,3 +11,8 @@ void KsiazkaAdresowa :: wypiszUzytkownikow() {
 
     uzytkownikMenedzer.wypiszUzytkownikow();
 }
+
+int KsiazkaAdresowa :: logowanieUzytkownika() {
+
+    uzytkownikMenedzer.logowanieUzytkownika();
+}
