@@ -92,7 +92,7 @@ Uzytkownik PlikZUzytkownikami :: pobierzDaneUzytkownika(string daneJednegoUzytko
     return uzytkownik;
 }
 
-void PlikZUzytkownikami :: zapiszWszystkichUzytkownikowDoPliku(Uzytkownik uzytkownik)
+void PlikZUzytkownikami :: zapiszWszystkichUzytkownikowDoPliku()
 {
     fstream plikTekstowy;
     string liniaZDanymiUzytkownika = "";
