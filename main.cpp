@@ -7,10 +7,12 @@ using namespace std;
 int main() {
 
     KsiazkaAdresowa ksiazkaAdresowa ("Uzytkownicy.txt");
-    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
-    ksiazkaAdresowa.logowanieUzytkownika();
     ksiazkaAdresowa.rejestracjaUzytkownika();
+    ksiazkaAdresowa.logowanieUzytkownika();
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+    ksiazkaAdresowa.wylogowanieUzytkownika();
     ksiazkaAdresowa.wypiszUzytkownikow();
+
 
 
     return 0;

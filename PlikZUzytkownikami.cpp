@@ -92,9 +92,9 @@ Uzytkownik PlikZUzytkownikami :: pobierzDaneUzytkownika(string daneJednegoUzytko
     return uzytkownik;
 }
 
-void PlikZUzytkownikami :: zapiszWszystkichUzytkownikowDoPliku()
+void PlikZUzytkownikami :: zapiszWszystkichUzytkownikowDoPliku(vector <Uzytkownik> &uzytkownicy)
 {
-    fstream plikTekstowy;
+    fstream plikTekstowy;;
     string liniaZDanymiUzytkownika = "";
     vector <Uzytkownik>::iterator itrKoniec = --uzytkownicy.end();
 
