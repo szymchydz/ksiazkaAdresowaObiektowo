@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Adresat.cpp" />
+		<Unit filename="Adresat.h" />
 		<Unit filename="KsiazkaAdresowa.cpp" />
 		<Unit filename="KsiazkaAdresowa.h" />
 		<Unit filename="MetodyPomocnicze.cpp" />
