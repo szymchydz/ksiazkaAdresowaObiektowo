@@ -8,9 +8,9 @@ void Adresat :: ustawIdAdresata (int noweId) {
     idAdresata = noweId;
 }
 
-void Adresat :: ustawIdUzytkownika(int noweIdUzytkownika) {
-    if (noweIdUzytkownika >= 0)
-    idUzytkownika = noweIdUzytkownika;
+void Adresat :: ustawIdUzytkownika(int idZalogowanegoUzytkownika) {
+    if (idZalogowanegoUzytkownika >= 0)
+    idUzytkownika = idZalogowanegoUzytkownika;
 }
 
 void Adresat :: ustawImie(string noweImie) {
@@ -32,8 +32,6 @@ void Adresat :: ustawEmail(string nowyEmail) {
 void Adresat ::  ustawAdres(string nowyAdres) {
     adres = nowyAdres;
 }
-
-
 
 int Adresat :: pobierzIdAdresata() {
     return idAdresata;
