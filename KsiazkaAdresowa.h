@@ -13,13 +13,16 @@ using namespace std;
 class KsiazkaAdresowa {
 
     UzytkownikMenedzer uzytkownikMenedzer;
-   // AdresatMenedzer adresatMenedzer;
+    AdresatMenedzer adresatMenedzer;
 
 public:
 
 
-    KsiazkaAdresowa(string nazwaPlikuZUzytkownikami) : uzytkownikMenedzer(nazwaPlikuZUzytkownikami) {
+   KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami) :
+    uzytkownikMenedzer(nazwaPlikuZUzytkownikami),
+    adresatMenedzer(nazwaPlikuZAdresatami) {
         uzytkownikMenedzer.wczytajUzytkownikowZPliku();
+        adresatMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
     };
 
     void rejestracjaUzytkownika();

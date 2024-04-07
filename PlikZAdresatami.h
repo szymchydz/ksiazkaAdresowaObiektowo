@@ -23,6 +23,7 @@ public:
     PlikZAdresatami(string NAZWA_PLIKU_Z_ADRESATAMI) : nazwaPlikuZAdresatami(NAZWA_PLIKU_Z_ADRESATAMI) {};
     void dopiszAdresataDoPliku(Adresat adresat);
     int pobierzZPlikuIdOstatniegoAdresata();
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };
 
 #endif

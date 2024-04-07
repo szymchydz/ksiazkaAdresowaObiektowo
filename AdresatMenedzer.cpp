@@ -40,3 +40,9 @@ void AdresatMenedzer :: dodajAdresata()
 
     //return ++idOstatniegoAdresata;
 }
+
+void AdresatMenedzer :: wczytajAdresatowZalogowanegoUzytkownikaZPliku() {
+
+    adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+
+}

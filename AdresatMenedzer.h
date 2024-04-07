@@ -26,7 +26,7 @@ public:
 
     AdresatMenedzer (string nazwaPlikuZAdresatami) : plikZAdresatami(nazwaPlikuZAdresatami) {};
     void dodajAdresata();
-
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };
 
 #endif
