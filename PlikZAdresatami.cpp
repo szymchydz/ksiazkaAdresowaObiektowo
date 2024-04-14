@@ -90,7 +90,7 @@ int PlikZAdresatami :: pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(str
     return idAdresata;
 }
 
-void PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPliku()
+int PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector <Adresat> &adresaci, int idZalogowanegoUzytkownika)
 {
     Adresat adresat;
     int idOstatniegoAdresata = 0;
@@ -103,9 +103,9 @@ void PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPliku()
     {
         while (getline(plikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami))
         {
-            if(idZalogowanegoUzytkownika == pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(daneJednegoAdresataOddzielonePionowymiKreskami))
+            if(idZalogowanegoUzytkownika == pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneJednegoAdresataOddzielonePionowymiKreskami))
             {
-                adresat = pobierzDaneAdresata(daneJednegoAdresataOddzielonePionowymiKreskami);
+                pobierzDaneAdresata(daneJednegoAdresataOddzielonePionowymiKreskami);
                 adresaci.push_back(adresat);
             }
         }
@@ -123,4 +123,49 @@ void PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPliku()
     }
     else
         return 0;
+}
+
+Adresat PlikZAdresatami :: pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami)
+{
+    Adresat adresat;
+    string pojedynczaDanaAdresata = "";
+    int numerPojedynczejDanejAdresata = 1;
+
+    for (int pozycjaZnaku = 0; pozycjaZnaku < daneAdresataOddzielonePionowymiKreskami.length(); pozycjaZnaku++)
+    {
+        if (daneAdresataOddzielonePionowymiKreskami[pozycjaZnaku] != '|')
+        {
+            pojedynczaDanaAdresata += daneAdresataOddzielonePionowymiKreskami[pozycjaZnaku];
+        }
+        else
+        {
+            switch(numerPojedynczejDanejAdresata)
+            {
+            case 1:
+                adresat.pobierzIdAdresata();
+                break;
+            case 2:
+                adresat.pobierzIdUzytkownika();
+                break;
+            case 3:
+                adresat.pobierzImie() = pojedynczaDanaAdresata;
+                break;
+            case 4:
+                adresat.pobierzNazwisko() = pojedynczaDanaAdresata;
+                break;
+            case 5:
+                adresat.pobierzNumerTelefonu() = pojedynczaDanaAdresata;
+                break;
+            case 6:
+                adresat.pobierzEmail() = pojedynczaDanaAdresata;
+                break;
+            case 7:
+                adresat.pobierzAdres() = pojedynczaDanaAdresata;
+                break;
+            }
+            pojedynczaDanaAdresata = "";
+            numerPojedynczejDanejAdresata++;
+        }
+    }
+    return adresat;
 }
