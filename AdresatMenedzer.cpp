@@ -4,8 +4,8 @@ Adresat AdresatMenedzer :: podajDaneNowegoAdresata()
 {
     Adresat adresat;
 
-    adresat.ustawIdAdresata(plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata());
-    adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
+    adresat.ustawIdAdresata( (plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() + 1));
+    adresat.ustawIdUzytkownika(ID_ZALOGOWANEGO_UZYTKOWNIKA);
 
     cout << "Podaj imie: ";
     adresat.ustawImie(MetodyPomocnicze :: wczytajLinie());
@@ -27,21 +27,25 @@ Adresat AdresatMenedzer :: podajDaneNowegoAdresata()
     return adresat;
 }
 
-int AdresatMenedzer :: dodajAdresata()
+void AdresatMenedzer :: dodajAdresata()
 {
     Adresat adresat;
 
     system("cls");
     cout << " >>> DODAWANIE NOWEGO ADRESATA <<<" << endl << endl;
-    adresat = AdresatMenedzer :: podajDaneNowegoAdresata();
+    adresat = podajDaneNowegoAdresata();
 
     adresaci.push_back(adresat);
-    plikZAdresatami.dopiszAdresataDoPliku(adresat);
-
-    //return ++idOstatniegoAdresata;
+    if (plikZAdresatami.dopiszAdresataDoPliku(adresat))
+    {
+        cout << "Nowy adresat zostal dodany" << endl;
+    }
+    else
+        cout << "Blad. Nie udalo sie dodac nowego adresata do pliku." << endl;
+    system("pause");
 }
 
-void AdresatMenedzer :: wyswietlWszystkichAdresatow(vector <Adresat> &adresaci)
+void AdresatMenedzer :: wyswietlWszystkichAdresatow()
 {
     system("cls");
     if (!adresaci.empty())
