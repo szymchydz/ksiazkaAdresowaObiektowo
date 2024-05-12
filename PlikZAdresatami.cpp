@@ -10,7 +10,7 @@ bool PlikZAdresatami :: dopiszAdresataDoPliku(Adresat adresat) {
     if (plikTekstowy.good() == true) {
         liniaZDanymiAdresata =  zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(adresat);
 
-        if (czyPlikJestPusty() == true) {
+        if (czyPlikJestPusty(NAZWA_PLIKU_Z_ADRESATAMI)) {
             plikTekstowy << liniaZDanymiAdresata;
         } else {
             plikTekstowy << endl << liniaZDanymiAdresata ;
@@ -22,9 +22,9 @@ bool PlikZAdresatami :: dopiszAdresataDoPliku(Adresat adresat) {
     return false;
 }
 
-bool PlikZAdresatami :: czyPlikJestPusty() {
+bool PlikZAdresatami :: czyPlikJestPusty(const string& nazwaPliku) {
 
-    fstream plikTekstowy("Adresaci.txt", ios::in);
+    fstream plikTekstowy(nazwaPliku.c_str(), ios::in);
 
     if (!plikTekstowy.is_open()) {
         cerr << "Blad otwarcia pliku!" << endl;
@@ -43,7 +43,7 @@ string PlikZAdresatami :: zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKre
     string liniaZDanymiAdresata = "";
 
     liniaZDanymiAdresata += MetodyPomocnicze :: konwersjaIntNaString(adresat.pobierzIdUzytkownika())+ '|';
-    liniaZDanymiAdresata += adresat.pobierzIdAdresata() + '|';
+    liniaZDanymiAdresata += MetodyPomocnicze :: konwersjaIntNaString(adresat.pobierzIdAdresata()) + '|';
     liniaZDanymiAdresata += adresat.pobierzImie() + '|';
     liniaZDanymiAdresata += adresat.pobierzNazwisko() + '|';
     liniaZDanymiAdresata += adresat.pobierzNumerTelefonu() + '|';
@@ -54,7 +54,6 @@ string PlikZAdresatami :: zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKre
 }
 
 int PlikZAdresatami :: pobierzZPlikuIdOstatniegoAdresata() {
-    int idOstatniegoAdresata = 0;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     string daneOstaniegoAdresataWPliku = "";
     fstream plikTekstowy;
@@ -100,9 +99,9 @@ vector <Adresat> PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPlik
 
     if (daneOstaniegoAdresataWPliku != "") {
         idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
-        return adresaci;
-
     }
+
+    return adresaci;
 }
 
 Adresat PlikZAdresatami :: pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami) {

@@ -13,8 +13,9 @@ using namespace std;
 class PlikZAdresatami {
 
     const string NAZWA_PLIKU_Z_ADRESATAMI;
-    int idOstatniegoAdresata;
-    bool czyPlikJestPusty();
+    int idOstatniegoAdresata = 0;
+
+    bool czyPlikJestPusty(const string& nazwaPliku);
     string zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(Adresat adresat);
     string pobierzLiczbe(string tekst, int pozycjaZnaku);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
