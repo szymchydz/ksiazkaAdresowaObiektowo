@@ -73,7 +73,7 @@ int PlikZAdresatami :: pobierzZPlikuIdOstatniegoAdresata() {
 
 int PlikZAdresatami :: pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami) {
     int pozycjaRozpoczeciaIdAdresata = 0;
-    int idAdresata = MetodyPomocnicze :: konwersjaStringNaInt(pobierzLiczbe(daneJednegoAdresataOddzielonePionowymiKreskami, pozycjaRozpoczeciaIdAdresata));
+    int idAdresata = MetodyPomocnicze :: konwersjaStringNaInt(MetodyPomocnicze ::pobierzLiczbe(daneJednegoAdresataOddzielonePionowymiKreskami, pozycjaRozpoczeciaIdAdresata));
     return idAdresata;
 }
 
@@ -151,7 +151,7 @@ int PlikZAdresatami :: pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(
     return idUzytkownika;
 }
 
-string PlikZAdresatami :: pobierzLiczbe(string tekst, int pozycjaZnaku)
+/*string PlikZAdresatami :: pobierzLiczbe(string tekst, int pozycjaZnaku)
 {
     string liczba = "";
     while(isdigit(tekst[pozycjaZnaku]) == true)
@@ -160,4 +160,4 @@ string PlikZAdresatami :: pobierzLiczbe(string tekst, int pozycjaZnaku)
         pozycjaZnaku ++;
     }
     return liczba;
-}
+}*/
