@@ -105,7 +105,7 @@
 	<sstream>
 	<algorithm>
 
-1715538426 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
+1715538924 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
@@ -126,10 +126,10 @@
 	<iostream>
 	"Adresat.h"
 
-1715536837 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresat.h
+1716049755 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresat.h
 	<iostream>
 
-1715536397 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
+1716052074 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
 1715536418 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.h
@@ -149,6 +149,6 @@
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1715535907 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
+1716052074 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 

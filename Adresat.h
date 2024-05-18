@@ -36,6 +36,7 @@ public:
     void ustawEmail(string nowyEmail);
     void ustawAdres(string nowyAdres);
 
+
     int pobierzIdAdresata();
     int pobierzIdUzytkownika();
     string pobierzImie();

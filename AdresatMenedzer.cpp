@@ -3,8 +3,8 @@
 Adresat AdresatMenedzer :: podajDaneNowegoAdresata() {
     Adresat adresat;
 
-    adresat.ustawIdAdresata( (plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() + 1));
     adresat.ustawIdUzytkownika(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    adresat.ustawIdAdresata((plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() + 1));
 
     cout << "Podaj imie: ";
     adresat.ustawImie(MetodyPomocnicze :: wczytajLinie());
@@ -42,8 +42,9 @@ void AdresatMenedzer :: dodajAdresata() {
 }
 
 void AdresatMenedzer :: wyswietlWszystkichAdresatow() {
-    system("cls");
-    if (!adresaci.empty()) {
+   system("cls");
+
+     if (!adresaci.empty()) {
         cout << "             >>> ADRESACI <<<" << endl;
         cout << "-----------------------------------------------" << endl;
         for (const auto& adresat : adresaci) {
@@ -57,7 +58,7 @@ void AdresatMenedzer :: wyswietlWszystkichAdresatow() {
 }
 
 void AdresatMenedzer :: wyswietlDaneAdresata(Adresat adresat) {
-    cout << endl << "Id:         " << adresat.pobierzIdAdresata() << endl;
+    cout << endl << "Id:                 " << adresat.pobierzIdAdresata() << endl;
     cout << "Imie:               " << adresat.pobierzImie() << endl;
     cout << "Nazwisko:           " << adresat.pobierzNazwisko() << endl;
     cout << "Numer telefonu:     " << adresat.pobierzNumerTelefonu() << endl;

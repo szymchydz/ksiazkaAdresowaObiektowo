@@ -10,7 +10,7 @@ bool PlikZAdresatami :: dopiszAdresataDoPliku(Adresat adresat) {
     if (plikTekstowy.good() == true) {
         liniaZDanymiAdresata =  zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(adresat);
 
-        if (czyPlikJestPusty(NAZWA_PLIKU_Z_ADRESATAMI)) {
+        if (czyPlikJestPusty(NAZWA_PLIKU_Z_ADRESATAMI.c_str())) {
             plikTekstowy << liniaZDanymiAdresata;
         } else {
             plikTekstowy << endl << liniaZDanymiAdresata ;
@@ -31,19 +31,19 @@ bool PlikZAdresatami :: czyPlikJestPusty(const string& nazwaPliku) {
         return false;
     }
 
-    plikTekstowy.seekg(0, ios::end);
-    if (plikTekstowy.tellg() == 0)
-        return true;
-    else
-        return false;
+     plikTekstowy.seekg(0, ios::end);
+    bool isEmpty = (plikTekstowy.tellg() == 0);
+    plikTekstowy.close();
+    return isEmpty;
 }
 
 
 string PlikZAdresatami :: zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(Adresat adresat) {
     string liniaZDanymiAdresata = "";
 
-    liniaZDanymiAdresata += MetodyPomocnicze :: konwersjaIntNaString(adresat.pobierzIdUzytkownika())+ '|';
+
     liniaZDanymiAdresata += MetodyPomocnicze :: konwersjaIntNaString(adresat.pobierzIdAdresata()) + '|';
+    liniaZDanymiAdresata += MetodyPomocnicze :: konwersjaIntNaString(adresat.pobierzIdUzytkownika())+ '|';
     liniaZDanymiAdresata += adresat.pobierzImie() + '|';
     liniaZDanymiAdresata += adresat.pobierzNazwisko() + '|';
     liniaZDanymiAdresata += adresat.pobierzNumerTelefonu() + '|';
@@ -79,8 +79,8 @@ int PlikZAdresatami :: pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(str
 
 vector <Adresat> PlikZAdresatami :: wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika) {
 
-    vector <Adresat> adresaci;
     Adresat adresat;
+    vector <Adresat> adresaci;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     string daneOstaniegoAdresataWPliku = "";
     fstream plikTekstowy;
@@ -115,25 +115,25 @@ Adresat PlikZAdresatami :: pobierzDaneAdresata(string daneAdresataOddzielonePion
         } else {
             switch(numerPojedynczejDanejAdresata) {
             case 1:
-                adresat.pobierzIdUzytkownika();
+                adresat.ustawIdAdresata(MetodyPomocnicze::konwersjaStringNaInt(pojedynczaDanaAdresata));
                 break;
             case 2:
-                adresat.pobierzIdAdresata();
+                adresat.ustawIdUzytkownika(MetodyPomocnicze::konwersjaStringNaInt(pojedynczaDanaAdresata));
                 break;
             case 3:
-                adresat.pobierzImie() = pojedynczaDanaAdresata;
+                 adresat.ustawImie(pojedynczaDanaAdresata);
                 break;
             case 4:
-                adresat.pobierzNazwisko() = pojedynczaDanaAdresata;
+                adresat.ustawNazwisko(pojedynczaDanaAdresata);
                 break;
             case 5:
-                adresat.pobierzNumerTelefonu() = pojedynczaDanaAdresata;
+                adresat.ustawNumerTelefonu(pojedynczaDanaAdresata);
                 break;
             case 6:
-                adresat.pobierzEmail() = pojedynczaDanaAdresata;
+                adresat.ustawEmail(pojedynczaDanaAdresata);
                 break;
             case 7:
-                adresat.pobierzAdres() = pojedynczaDanaAdresata;
+                adresat.ustawAdres(pojedynczaDanaAdresata);
                 break;
             }
             pojedynczaDanaAdresata = "";
