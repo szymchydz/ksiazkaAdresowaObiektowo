@@ -36,6 +36,7 @@ public:
     void wyszukajAdresatowPoImieniu();
     void wyszukajAdresatowPoNazwisku();
     void wyswietlWszystkichAdresatow();
+    void edytujAdresata();
     bool czyUzytkownikJestZalogowany();
     char wybierzOpcjeZMenuGlownego();
     char wybierzOpcjeZMenuUzytkownika();

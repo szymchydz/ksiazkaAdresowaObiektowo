@@ -74,6 +74,17 @@ void KsiazkaAdresowa :: wyszukajAdresatowPoNazwisku() {
     }
 }
 
+void KsiazkaAdresowa :: edytujAdresata() {
+
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany()) {
+
+        adresatMenedzer -> edytujAdresata();
+    } else {
+        cout << "Aby edytowac adresata po nazwisku, nalezy najpierw sie zalogowac" << endl;
+        system ("pause");
+    }
+}
+
 char KsiazkaAdresowa :: wybierzOpcjeZMenuGlownego()
 {
     char wybor;
