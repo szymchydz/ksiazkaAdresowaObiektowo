@@ -65,7 +65,6 @@ void UzytkownikMenedzer :: wypiszUzytkownikow() {
     }
 }
 
-
 int UzytkownikMenedzer :: logowanieUzytkownika() {
 
     string login = "", haslo = "";

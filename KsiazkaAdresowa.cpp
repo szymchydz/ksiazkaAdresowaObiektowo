@@ -85,6 +85,18 @@ void KsiazkaAdresowa :: edytujAdresata() {
     }
 }
 
+int KsiazkaAdresowa :: usunAdresata(){
+
+if (uzytkownikMenedzer.czyUzytkownikJestZalogowany()) {
+
+        adresatMenedzer -> usunAdresata();
+    } else {
+        cout << "Aby edytowac adresata po nazwisku, nalezy najpierw sie zalogowac" << endl;
+        system ("pause");
+    }
+
+}
+
 char KsiazkaAdresowa :: wybierzOpcjeZMenuGlownego()
 {
     char wybor;

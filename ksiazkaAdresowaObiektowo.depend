@@ -50,10 +50,10 @@
 
 1707074682 D
 
-1717950515 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.cpp
+1717953170 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1717950558 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.h
+1717953049 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"AdresatMenedzer.h"
@@ -105,7 +105,7 @@
 	<sstream>
 	<algorithm>
 
-1717950515 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
+1717954286 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
@@ -119,7 +119,7 @@
 	<iostream>
 	"Uzytkownik.h"
 
-1713716092 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.cpp
+1717953897 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
 1712514072 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresat.cpp
@@ -129,10 +129,10 @@
 1716049755 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresat.h
 	<iostream>
 
-1717951097 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
+1717954691 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1717948693 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.h
+1717953049 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -142,13 +142,13 @@
 	"Adresat.h"
 	"PlikZAdresatami.h"
 
-1717952345 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.h
+1717953897 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1717952298 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
+1717953452 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
