@@ -52,6 +52,28 @@ bool KsiazkaAdresowa :: czyUzytkownikJestZalogowany() {
 
 }
 
+void KsiazkaAdresowa :: wyszukajAdresatowPoImieniu() {
+
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany()) {
+
+        adresatMenedzer -> wyszukajAdresatowPoImieniu();
+    } else {
+        cout << "Aby wyszukac adresata po imieniu, nalezy najpierw sie zalogowac" << endl;
+        system ("pause");
+    }
+}
+
+void KsiazkaAdresowa :: wyszukajAdresatowPoNazwisku() {
+
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany()) {
+
+        adresatMenedzer -> wyszukajAdresatowPoNazwisku();
+    } else {
+        cout << "Aby dodac adresata po nazwisku, nalezy najpierw sie zalogowac" << endl;
+        system ("pause");
+    }
+}
+
 char KsiazkaAdresowa :: wybierzOpcjeZMenuGlownego()
 {
     char wybor;

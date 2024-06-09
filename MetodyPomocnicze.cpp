@@ -64,3 +64,4 @@ char MetodyPomocnicze :: wczytajZnak()
     }
     return znak;
 }
+
