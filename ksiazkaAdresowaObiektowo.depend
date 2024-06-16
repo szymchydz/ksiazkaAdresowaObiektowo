@@ -93,10 +93,11 @@
 1708891936 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.h
 	<iostream>
 
-1713714584 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.h
+1718559640 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
+	"PlikTekstowy.h"
 	"Uzytkownik.h"
 	"MetodyPomocnicze.h"
 
@@ -112,7 +113,7 @@
 1717947585 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1713714671 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.cpp
+1718559640 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
 
 1712514072 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\uzytkownik.cpp
@@ -129,7 +130,7 @@
 1716049755 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresat.h
 	<iostream>
 
-1717954691 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
+1718559834 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
 1717953049 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\adresatmenedzer.h
@@ -142,13 +143,21 @@
 	"Adresat.h"
 	"PlikZAdresatami.h"
 
-1717953897 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.h
+1718559727 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
+	"PlikTekstowy.h"
 	"Adresat.h"
 	"MetodyPomocnicze.h"
 
-1717953452 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
+1718558604 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
+
+1718559834 c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\pliktekstowy.h
+	<iostream>
+	<fstream>
+
+1718559691 source:c:\moje pliki\programy\c++\c++ programy\ksiazkaadresowaobiektowo\pliktekstowy.cpp
+	"PlikTekstowy.h"
 

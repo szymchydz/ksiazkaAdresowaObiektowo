@@ -207,8 +207,7 @@ void AdresatMenedzer :: edytujAdresata() {
     system("pause");
 }
 
-int AdresatMenedzer :: usunAdresata()
-{
+int AdresatMenedzer :: usunAdresata(){
     int idUsuwanegoAdresata = 0;
     int numerLiniiUsuwanegoAdresata = 0;
 

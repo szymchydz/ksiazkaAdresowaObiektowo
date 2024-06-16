@@ -10,7 +10,7 @@ bool PlikZAdresatami :: dopiszAdresataDoPliku(Adresat adresat) {
     if (plikTekstowy.good() == true) {
         liniaZDanymiAdresata =  zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(adresat);
 
-        if (czyPlikJestPusty(NAZWA_PLIKU_Z_ADRESATAMI.c_str())) {
+        if (czyPlikJestPusty()) {
             plikTekstowy << liniaZDanymiAdresata;
         } else {
             plikTekstowy << endl << liniaZDanymiAdresata ;
@@ -22,9 +22,9 @@ bool PlikZAdresatami :: dopiszAdresataDoPliku(Adresat adresat) {
     return false;
 }
 
-bool PlikZAdresatami :: czyPlikJestPusty(const string& nazwaPliku) {
+bool PlikZAdresatami :: czyPlikJestPusty() {
 
-    fstream plikTekstowy(nazwaPliku.c_str(), ios::in);
+    fstream plikTekstowy("Adresaci.txt", ios::in);
 
     if (!plikTekstowy.is_open()) {
         cerr << "Blad otwarcia pliku!" << endl;
@@ -227,8 +227,7 @@ void PlikZAdresatami :: zaktualizujDaneWybranegoAdresata(Adresat adresat, int id
     cout << endl << "Dane zostaly zaktualizowane." << endl << endl;
 }
 
-void PlikZAdresatami :: usunWybranaLinieWPliku(int numerUsuwanejLinii)
-{
+void PlikZAdresatami :: usunWybranaLinieWPliku(int numerUsuwanejLinii){
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
     string wczytanaLinia = "";
     int numerWczytanejLinii = 1;

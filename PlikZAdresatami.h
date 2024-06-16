@@ -5,18 +5,19 @@
 #include <vector>
 #include <fstream>
 
+#include "PlikTekstowy.h"
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
 
 using namespace std;
 
-class PlikZAdresatami {
+class PlikZAdresatami : public PlikTekstowy {
 
     const string NAZWA_PLIKU_Z_ADRESATAMI;
     int idOstatniegoAdresata = 0;
     int idUsunietegoAdresata = 0;
     string nazwaTymczasowegoPlikuZAdresatami = "Adresaci_tymczasowo.txt";
-    bool czyPlikJestPusty(const string& nazwaPliku);
+    bool czyPlikJestPusty();
     string zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(Adresat adresat);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
