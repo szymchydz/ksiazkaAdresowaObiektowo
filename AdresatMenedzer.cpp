@@ -207,7 +207,7 @@ void AdresatMenedzer :: edytujAdresata() {
     system("pause");
 }
 
-int AdresatMenedzer :: usunAdresata(){
+void AdresatMenedzer :: usunAdresata(){
     int idUsuwanegoAdresata = 0;
     int numerLiniiUsuwanegoAdresata = 0;
 
@@ -227,18 +227,15 @@ int AdresatMenedzer :: usunAdresata(){
             znak = MetodyPomocnicze :: wczytajZnak();
             if (znak == 't')
             {
-                numerLiniiUsuwanegoAdresata = plikZAdresatami.zwrocNumerLiniiSzukanegoAdresata(idUsuwanegoAdresata);
-                plikZAdresatami.usunWybranaLinieWPliku(numerLiniiUsuwanegoAdresata);
+                plikZAdresatami.usunWybranegoAdresataZPliku(idUsuwanegoAdresata);
                 adresaci.erase(itr);
                 cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
                 system("pause");
-                return idUsuwanegoAdresata;
             }
             else
             {
                 cout << endl << endl << "Wybrany adresat NIE zostal usuniety" << endl << endl;
                 system("pause");
-                return 0;
             }
         }
     }
@@ -247,7 +244,6 @@ int AdresatMenedzer :: usunAdresata(){
         cout << endl << "Nie ma takiego adresata w ksiazce adresowej" << endl << endl;
         system("pause");
     }
-    return 0;
 }
 
 char AdresatMenedzer :: wybierzOpcjeZMenuEdycja() {
