@@ -8,7 +8,7 @@ using namespace std;
 
 class PlikTekstowy {
 
-    const string NAZWA_PLIKU;
+    string nazwaPliku;
 
 public:
 

@@ -157,7 +157,7 @@ void AdresatMenedzer :: edytujAdresata() {
                 string noweImie = MetodyPomocnicze :: wczytajLinie();
                 noweImie = MetodyPomocnicze:: zamienPierwszaLitereNaDuzaAPozostaleNaMale(noweImie);
                 adresaci[i].ustawImie(noweImie);
-                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i], idEdytowanegoAdresata);
+                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i]);
                 break;
             }
 
@@ -166,28 +166,28 @@ void AdresatMenedzer :: edytujAdresata() {
                 string noweNazwisko = MetodyPomocnicze :: wczytajLinie();
                 noweNazwisko = MetodyPomocnicze :: zamienPierwszaLitereNaDuzaAPozostaleNaMale(noweNazwisko);
                 adresaci[i].ustawNazwisko(noweNazwisko);
-                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i], idEdytowanegoAdresata);
+                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i]);
                 break;
             }
             case '3': {
                 cout << "Podaj nowy numer telefonu: ";
                 string nowyNumerTelefonu = MetodyPomocnicze :: wczytajLinie();
                 adresaci[i].ustawNumerTelefonu(nowyNumerTelefonu);
-                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i], idEdytowanegoAdresata);
+                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i]);
                 break;
             }
             case '4': {
                 cout << "Podaj nowy email: ";
                 string nowyEmail = MetodyPomocnicze :: wczytajLinie();
                 adresaci[i].ustawEmail(nowyEmail);
-                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i], idEdytowanegoAdresata);
+                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i]);
                 break;
             }
             case '5': {
                 cout << "Podaj nowy adres zamieszkania: ";
                 string nowyAdres = MetodyPomocnicze :: wczytajLinie();
                 adresaci[i].ustawAdres(nowyAdres);
-                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i], idEdytowanegoAdresata);
+                plikZAdresatami.zaktualizujDaneWybranegoAdresata(adresaci[i]);
                 break;
             }
             case '6': {
