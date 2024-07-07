@@ -8,10 +8,9 @@ using namespace std;
 
 class PlikTekstowy {
 
-    string nazwaPliku;
-
 public:
-
+    const string NAZWA_PLIKU;
+    PlikTekstowy(const string& nazwaPliku) : NAZWA_PLIKU(nazwaPliku) {}
     bool czyPlikJestPusty();
 };
 

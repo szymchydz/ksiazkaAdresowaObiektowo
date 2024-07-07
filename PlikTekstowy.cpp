@@ -3,7 +3,7 @@
 
 bool PlikTekstowy :: czyPlikJestPusty() {
 
-    fstream plikTekstowy(nazwaPliku, ios::in);
+    fstream plikTekstowy(NAZWA_PLIKU, ios::in);
 
     if (!plikTekstowy.is_open()) {
         cerr << "Blad otwarcia pliku!" << endl;
