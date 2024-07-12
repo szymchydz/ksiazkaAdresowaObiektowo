@@ -235,7 +235,7 @@ void AdresatMenedzer :: usunAdresata() {
             break;
         }
     }
-    if (czyIstniejeAdresat == false) {
+    if (!czyIstniejeAdresat) {
         cout << endl << "Nie ma takiego adresata w ksiazce adresowej" << endl << endl;
         system("pause");
     }
