@@ -2,29 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="PlikTekstowy.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="UzytkownikMenedzer.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="385" topLine="0" />
+			<Cursor1 position="582" topLine="5" />
 		</Cursor>
 	</File>
-	<File name="PlikZAdresatami.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Adresat.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7783" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="KsiazkaAdresowa.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1118" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="MetodyPomocnicze.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="540" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="PlikZUzytkownikami.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="911" topLine="0" />
+			<Cursor1 position="1252" topLine="13" />
 		</Cursor>
 	</File>
 	<File name="Adresat.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,70 +17,21 @@
 			<Cursor1 position="841" topLine="4" />
 		</Cursor>
 	</File>
-	<File name="AdresatMenedzer.cpp" open="1" top="1" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlikZUzytkownikami.h" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4791" topLine="223" />
-		</Cursor>
-	</File>
-	<File name="PlikZAdresatami.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1619" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="AdresatMenedzer.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="136" topLine="6" />
-		</Cursor>
-	</File>
-	<File name="PlikTekstowy.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="252" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Uzytkownik.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="PlikZUzytkownikami.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="584" topLine="0" />
+			<Cursor1 position="602" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="MetodyPomocnicze.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1372" topLine="31" />
+			<Cursor1 position="1372" topLine="0" />
 		</Cursor>
-	</File>
-	<File name="Adresat.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1063" topLine="10" />
-		</Cursor>
-	</File>
-	<File name="KsiazkaAdresowa.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="645" topLine="13" />
-		</Cursor>
-		<Folding>
-			<Collapse line="26" />
-			<Collapse line="30" />
-			<Collapse line="41" />
-			<Collapse line="49" />
-			<Collapse line="65" />
-			<Collapse line="76" />
-			<Collapse line="87" />
-			<Collapse line="100" />
-		</Folding>
 	</File>
 	<File name="UzytkownikMenedzer.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="240" topLine="0" />
+			<Cursor1 position="240" topLine="38" />
 		</Cursor>
 		<Folding>
-			<Collapse line="15" />
-			<Collapse line="40" />
-			<Collapse line="47" />
-			<Collapse line="57" />
 			<Collapse line="67" />
 			<Collapse line="97" />
 			<Collapse line="101" />
@@ -103,19 +39,69 @@
 			<Collapse line="109" />
 		</Folding>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlikZAdresatami.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="270" topLine="25" />
+			<Cursor1 position="7783" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="UzytkownikMenedzer.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlikTekstowy.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="825" topLine="0" />
+			<Cursor1 position="279" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="AdresatMenedzer.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1191" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="KsiazkaAdresowa.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="645" topLine="81" />
+		</Cursor>
+	</File>
+	<File name="PlikTekstowy.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="385" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="KsiazkaAdresowa.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="728" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="PlikZAdresatami.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="290" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Uzytkownik.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1452" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Uzytkownik.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="163" topLine="0" />
+			<Cursor1 position="171" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="PlikZUzytkownikami.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="584" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="AdresatMenedzer.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9160" topLine="158" />
+		</Cursor>
+	</File>
+	<File name="MetodyPomocnicze.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="400" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

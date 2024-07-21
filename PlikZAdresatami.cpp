@@ -209,9 +209,9 @@ void PlikZAdresatami :: usunWybranegoAdresataZPliku(int idUsuwanegoAdresata) {
                 continue;
             } else {
                 if (czyIstniejeAdresat == false)
-                    tymczasowyPlikTekstowy << daneJednegoAdresataOddzielonePionowymiKreskami;
+                    tymczasowyPlikTekstowy << daneJednegoAdresataOddzielonePionowymiKreskami << endl;
                 else
-                    tymczasowyPlikTekstowy << endl << daneJednegoAdresataOddzielonePionowymiKreskami;
+                    tymczasowyPlikTekstowy << daneJednegoAdresataOddzielonePionowymiKreskami << endl;
             }
         }
 
